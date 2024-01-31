@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700;800;900&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Jost", sans-serif;
+}
+body{
+    padding: 60px 20px;
+    color: rgb(211, 211, 211);
+    background: #100034;
+}
+p{
+    margin: 10px 0;
+    letter-spacing: 2px;
+}
+.flex-container-cards{
+    filter: drop-shadow(rgb(255, 100, 0)0 0 1px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+.flex-container-cards .card {
+    background: linear-gradient(240deg, rgba(0, 0, 0, 1) 0%, rgba(36, 36, 36, 1) 100%);
+    width: 300px;
+    -webkit-clip-path: polygon(0 0, 200px 0, 210px 10px, 280px 10px, 290px 0, 100% 0, 100% 150px, 290px 160px,290px 300px, 100% 310px, 100% calc(100% - 30px), calc(100% - 30px) 100%, 0 100%, 0 400px, 10px 390px, 10px 100px, 0 90px );
+        clip-path: polygon(0 0, 200px 0, 210px 10px, 280px 10px, 290px 0, 100% 0, 100% 150px, 290px 160px,290px 300px, 100% 310px, 100% calc(100% - 30px), calc(100% - 30px) 100%, 0 100%, 0 400px, 10px 390px, 10px 100px, 0 90px );
+    transition: all 0.2s linear;
+    filter: drop-shadow(rgb(255, 0, 0) 0 0 10px);
+}
